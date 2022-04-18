@@ -27,10 +27,8 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
-    Scanner in = new Scanner(System.in);
     
-        List<Integer> allNumbers = new ArrayList<>();
+    List<Integer> allNumbers = new ArrayList<>();
 
     Scanner in = new Scanner(System.in);
 
