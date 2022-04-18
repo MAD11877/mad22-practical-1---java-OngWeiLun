@@ -19,5 +19,19 @@ public class Question4
      
     Scanner in = new Scanner(System.in);
     
+    int base = in.nextInt();
+
+    String stars = "";
+    for(int i = 0; i < base; i++){
+      stars += "*";
+    };
+
+    int noOfStars = stars.length();
+    for(int t = noOfStars; t > 0; t--){
+      System.out.println(stars);
+      stars = stars.substring(0,stars.length()-1);
+    };
+
+    in.close();
   }
 }
