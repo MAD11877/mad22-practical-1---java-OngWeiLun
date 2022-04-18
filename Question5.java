@@ -28,5 +28,42 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     
+        List<Integer> allNumbers = new ArrayList<>();
+
+    Scanner in = new Scanner(System.in);
+
+    //System.out.print("Enter integer(reps): ");
+
+    int counter = in.nextInt();
+
+    for(int i = 0; i < counter; i++){
+      //System.out.print("Enter integer: ");
+      allNumbers.add(in.nextInt());
+    }
+
+    in.close();
+
+    int count1 = 0;
+    int count2 = 0;
+    int mode1 = 0;
+    int mode2 = 0;
+
+    for (int m = 0; m < allNumbers.size(); m++){
+      
+      mode1 = allNumbers.get(m);
+      count1 = 0;
+      
+      for(int j = m + 1; j < allNumbers.size();j++){
+        if (mode1 == allNumbers.get(j)) count1++;
+      }
+      if (count1 > count2){
+        mode2 = mode1;
+        count2 = count1;
+      }  
+      
+    }
+
+    System.out.print(mode2);
+    
   }
 }
